@@ -1,0 +1,69 @@
+<!--pages/function/leader/repair-check/repair-check.wxml-->
+<view class="container"> 
+  <view class="page-body">
+    <!-- 维修信息盒子 -->
+      <view class="repairInfoBox">
+        <view class="title">
+          <view class="titleName"><image src="../../../../images/func.png"></image>维修信息</view>
+          <view class="repairNum">报修单号：{{record.oddNumber}}</view>
+        </view>
+        <view class="info">
+          <view><text class="infoName">设备：{{record.deviceName}}</text></view>
+          <view><text class="infoName">描述：{{record.des}}</text></view>
+          <view><text class="infoName">等级：{{record.level}}</text></view>
+          <view><text class="infoName">报修人：{{record.checkName}}</text></view>
+          <view><text class="infoName">受理人：{{record.solveName}}</text></view>
+          <view><text class="infoName">维修人：{{record.solveName}}</text></view>
+          <view class="img-box">
+            <text class="infoName">图片：</text>
+            <view class="img">
+              <block wx:for="{{record.img}}" wx:for-item="img">
+                <view data-id="{{index}}" bindtap="photo_preview">
+                  <image src="{{img}}" mode="aspectFit"></image>
+                </view>
+              </block>
+            </view>
+          </view>
+        </view>
+      </view>
+    <!-- 其余人评价 -->
+    <view class="otherRemark">
+      <view class="table">
+        <view class="tr bg-w">
+          <view class="th th1">职位</view>
+          <view class="th">评价</view>
+        </view>
+        <block wx:for="{{listData}}" wx:key="{{code}}">
+          <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+            <view class="td td1">{{item.code}}</view>
+            <view class="td">{{item.text}}</view>
+          </view>
+          <view class="tr" wx:else>
+            <view class="td td1">{{item.code}}</view>
+            <view class="td">{{item.text}}</view>
+          </view>
+        </block>
+      </view>
+    </view>
+    <!-- 评价盒子 -->
+      <view class="remark-box">
+        <view class="remark-text">
+          评价：
+          <textarea placeholder="请在此输入评价内容......"></textarea>
+        </view>
+        <view class="score">
+          <text class="score-text">评分：</text>
+          <i-rate 
+              bind:change="onChange2" 
+              value="{{starIndex2}}" 
+              size="25">
+              {{starIndex2}}星
+          </i-rate>
+        </view>
+        <view class="button">
+          <button class="nopass"><i-icon type="close" class="icon"/>不通过</button>
+          <button class="pass"><i-icon type="right" class="icon"/>通过</button>
+        </view>
+      </view>
+  </view>
+</view>

@@ -1,0 +1,8 @@
+<!--pages/index/index-notice/index-notice.wxml-->
+<view class="intro">
+  <block wx:for="{{content}}">
+    <view class="content">
+    {{item}}
+  </view>
+  </block>
+</view>

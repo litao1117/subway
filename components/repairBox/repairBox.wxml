@@ -1,0 +1,15 @@
+<!--components/repairBox/repairBox.wxml-->
+<view class="repairInfoBox">
+  <view class="title">
+          <view class="titleName"><image src="../../images/func.png"></image>维修信息</view>
+          <view class="repairNum">报修单号：{{info.oddNumber}}
+            <i-icon type="enter" class="more"/>
+          </view>
+        </view>
+        <view class="info">
+          <view><text class="infoName">设备：{{info.deviceName}}</text></view>
+          <view><text class="infoName">描述：{{info.des}}</text></view>
+          <view><text class="infoName">地点：{{info.locate}}</text></view>
+          <view><text class="infoName">等级：{{info.level}}</text></view>
+        </view>      
+</view>

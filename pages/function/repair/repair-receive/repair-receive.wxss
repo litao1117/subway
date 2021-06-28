@@ -1,0 +1,54 @@
+/* pages/function/repair/repair-receive/repair-receive.wxss */
+page {
+  background-color: #f6f6f6;
+}
+.box {
+  width: 690rpx;
+  height: 500rpx;
+  background-color: #fff;
+  margin: 50rpx auto;
+  display: flex;
+  flex-direction: column;
+}
+.topTitle {
+  height: 100rpx;
+  border-bottom: 2rpx solid #f2f2f2;
+  font-size: 40rpx;
+  line-height: 100rpx;
+  padding-left: 20rpx;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20rpx;
+  justify-content: space-between;
+}
+.infoBox {
+  height: 80rpx;
+  color: #888888;
+  word-wrap: none;
+  text-overflow: ellipsis;
+}
+.buttonBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.buttonBox .reject {
+  background-color: #d3d3d3;
+}
+button {
+  width: 300rpx;
+  background-color: #00bfff;
+  color: #fff;
+  border-radius: 100rpx;
+}
+.reasonBox {
+  margin: 50rpx 0;
+}
+.reasonBox textarea {
+  display: block;
+  margin: 50rpx auto;
+  border: 1rpx solid #d3d3d3;
+  height: 400rpx;
+}

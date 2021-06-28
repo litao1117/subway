@@ -1,0 +1,23 @@
+/* components/funcSmall/funcSmall.wxss */
+.funcSmall {
+  width: 374rpx;
+  height: 324rpx;
+  font-size: 28rpx;
+  border-bottom: 1rpx solid #E0E0E0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.funcIcon {
+  width: 75rpx;
+  height: 75rpx;
+  margin-bottom: 28rpx;
+}
+.funcIcon image {
+  width: 75rpx;
+  height: 75rpx;
+}
+.name {
+  font-size: 38rpx;
+}

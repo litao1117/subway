@@ -1,0 +1,26 @@
+<!--pages/function/fault/fault-record/fault-record.wxml-->
+<view>
+  <view class="repairInfoBox" data-id="{{index}}" bindtap="jumptoProcess">
+          <view class="leftAvatar">报修</view>
+          <view class="rightBox">
+            <view class="firstBox">
+              <text class="repairNum">1758611111</text><text style="color:#00bbff">：</text><text class="desc">啊啊啊啊啊啊啊我耳机发弄得你巫</text>
+            </view>
+            <view>
+              巡检人：李四
+            </view>
+            <view wx:if="{{current=='tab3' || current == 'tab2'}}">
+              受理人：张三
+            </view>
+            <view wx:if="{{current=='tab2'}}">
+              维修人：王五
+            </view>
+            <view class="lastView">
+              <view class="time">2021-04-12 15:32</view>
+              <view class="red" wx:if="{{current=='tab1'}}">待受理</view>
+              <view class="blue" wx:if="{{current=='tab2'}}">已处理</view>
+              <view class="green" wx:if="{{current=='tab3'}}">处理中</view>
+            </view>
+          </view>
+        </view>
+</view>

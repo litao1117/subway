@@ -1,0 +1,42 @@
+/* components/select/select.wxss */
+.select-box {
+  /* position: relative; */
+  width: 200rpx;
+}
+.select-current {
+  /* display: flex;
+  align-items: baseline; */
+  position: relative;
+  width: 130rpx;
+  margin: 0 auto;
+}
+.flag {
+  position: absolute;
+  right: -5rpx;
+  top: 26rpx;
+  /* display: block; */
+  border: 10rpx solid transparent;
+  border-top: 10rpx solid #999;
+  width: 0;
+  height: 0;
+}
+.option-list {
+  width: 200rpx;
+  padding: 12rpx 20rpx 10rpx 20rpx;
+  border-radius: 6rpx;
+  box-sizing: border-box;
+  z-index: 99;
+  box-shadow: 0rpx 0rpx 1rpx 1rpx rgba(0, 0, 0, 0.2) inset;
+  background-color: #f6f6f6;
+}
+.option {
+  display: block;
+  width: 100%;
+  line-height: 70rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+.option:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}

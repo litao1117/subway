@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText" : "维修记录",
+  "usingComponents": {
+    "i-tabs": "../../../../dist/tabs/index",
+    "i-tab": "../../../../dist/tab/index",
+    "i-icon": "../../../../dist/icon/index",
+    "p-load" : "../../../../components/loading/loading",
+    "select": "../../../../components/select/select"
+  }
+
+}

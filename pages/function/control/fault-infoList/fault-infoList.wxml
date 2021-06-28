@@ -1,0 +1,28 @@
+<!--pages/function/fault/fault-infoList/fault-infoList.wxml-->
+<view class="container">
+  <view class="page-body">
+    <block wx:for="{{faultInfoList}}" wx:key="index">
+      <view class="info-box" data-id="{{index}}" bindtap="jumptoDetail">
+        <view class="left">
+          <viwe class="avatar">
+            <image src="{{item.userAvatar}}"></image>
+          </viwe>
+          <view class="name">{{item.inspectionUserName}}</view>
+        </view>
+        <view class="middle">
+          <view class="des">{{item.faultDescribe}}</view>
+          <view class="locate">
+            <i-icon type="coordinates" class="icon"/>{{item.faultPlace}}
+          </view>
+          <view class="time">
+            <i-icon type="time" class="icon"/>{{item.createTime}}
+          </view>
+        </view>
+        <view class="right">
+          <view class="button">未审核</view>
+        </view>
+      </view>
+    </block>
+    
+  </view>
+</view>

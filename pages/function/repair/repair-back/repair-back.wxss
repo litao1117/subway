@@ -1,0 +1,92 @@
+/* pages/function/fault/fault-info/fault-info.wxss */
+.page-body {
+  background-color: #f6f6f6;
+}
+
+
+/* 回单盒子 */
+.back-box {
+  margin-top: 30rpx;
+}
+.back-inBox {
+  border-bottom: 1rpx solid #DCDCDC;
+  background-color: #fff;
+}
+.back-box .back-input {
+  display: flex;
+  align-items: center;
+  padding: 30rpx 0;
+}
+.back-input .title {
+  font-size: 35rpx;
+  display: flex;
+  align-items: center;
+  margin: 0 30rpx 0 30rpx;
+}
+.section {
+  color: red;
+}
+
+/* 图片 */
+.img-box {
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx 0;
+  border-bottom: 1rpx solid #DCDCDC;
+}
+.img-box .img-title {
+  font-size: 35rpx;
+  display: flex;
+  align-items: center;
+  margin: 0 30rpx;
+}
+.photo_preview {
+  margin: 20rpx 30rpx;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.photo_preview .upFile{
+  width: 230rpx;
+  height: 230rpx;
+  position: relative;
+}
+.photo_preview .upFile .preview_img {
+  width: 230rpx;
+  height: 230rpx;
+  padding: 0rpx 7rpx;
+}
+.photo_preview .upFile .closeImv {
+  position: absolute;
+  right: 0rpx;
+  top: 0rpx;
+  width: 50rpx;
+  height:50rpx;
+}
+
+.photo_add {
+  width: 230rpx;
+    height: 230rpx;
+    background-color:#e5e5e5;
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    align-items:  center;
+    padding: 0rpx 7rpx;
+}
+.add_img {
+  width: 50rpx;
+  height: 50rpx;
+}
+.submit .tishi {
+  color: #888888;
+  font-size: 30rpx;
+  text-align: center;
+}
+.submit button{
+  width: 600rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 100rpx;
+  margin: 30rpx auto;
+}

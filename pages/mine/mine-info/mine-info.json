@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "我的资料",
+  "usingComponents": {
+    "c-info": "../../../components/myInfo/myInfo",
+    "c-picker": "../../../components/myPicker/myPicker",
+    "i-icon": "../../../dist/icon/index"
+  }
+}

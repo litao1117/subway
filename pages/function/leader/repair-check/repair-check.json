@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "维修审查",
+  "usingComponents": {
+    "i-icon": "../../../../dist/icon/index",
+    "i-rate": "../../../../dist/rate/index"
+  }
+}

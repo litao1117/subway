@@ -1,0 +1,5 @@
+/* pages/function/leader/check-list/check-list.wxss */
+.page-body {
+  background-color: #f6f6f6;
+  min-height: 100vh;
+}

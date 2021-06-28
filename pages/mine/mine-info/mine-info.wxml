@@ -1,0 +1,33 @@
+<!--pages/mine-info/mine-info.wxml-->
+<view class="container">
+  <view class="page-body">
+    <view class="topBox">
+      <view class="row-detail">
+        <view class="info">头像</view>
+        <view class="right">
+          <image class="avatar" src="{{wxInfo.userAvatar}}"></image>
+        </view>
+      </view>
+      <c-info bind:change="getData" nature="微信昵称" flag="{{true}}" value="{{wxInfo.userNickname}}"></c-info>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{sexArray}}">
+        <c-picker nature="性别" nature_name="sex" value="{{userInfo.userSex}}"></c-picker>
+      </picker>
+    </view>
+    <view class="mediuBox">
+      <c-info bind:change="getData" nature="姓名" value="{{userInfo.userName}}" nature_name="userName"></c-info>
+      <c-info bind:change="getData" nature="电话" value="{{userInfo.userTel}}" nature_name="userTel"></c-info>
+      <picker mode="date" start="1900-01-01" end="2021-05-18" bindchange="bindDateChange">
+        <c-picker nature="生日" nature_name="userBirthday" value="{{userInfo.userBirthday}}" isMust="{{false}}"></c-picker>
+      </picker>
+    </view>
+    <view class="bottomBox">
+      <view wx:if="{{!isGrant}}">
+        <c-info bind:change="getData" nature="授权码" value="{{invitationCode}}" tishi="请填写授权码" nature_name="invitationCode"></c-info>
+      </view>
+      <view wx:else class="grant">
+        <i-icon type="success_fill" color="#4783B5" size="25" />已授权
+      </view>
+    </view>
+    <button class="submit" bindtap="submit" hover-class="hover">保存</button>
+  </view>
+</view>

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText":"故障详情",
+  "usingComponents": {
+    "c-picker": "../../../../components/myPicker/myPicker",
+    "faultInfo": "../../../../components/faultInfo/faultInfo"
+  }
+}

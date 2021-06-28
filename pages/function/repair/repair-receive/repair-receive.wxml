@@ -1,0 +1,25 @@
+<!--pages/function/repair/repair-receive/repair-receive.wxml-->
+<view>
+  <view class="box">
+    <view class="topTitle">
+      故障信息
+    </view>
+    <view class="info">
+      <view class="infoBox">故障地点：{{faultInfo.faultPlace}}</view>
+      <view class="infoBox">故障设备：{{faultInfo.faultEquipment}}</view>
+      <view class="infoBox">故障描述：{{faultInfo.faultDescribe}}</view>
+      <view class="infoBox">巡检人：{{faultInfo.inspectionUserName}}</view>
+      <view class="infoBox">时间：{{faultInfo.createTime}}</view>
+    </view>
+  </view>
+  <view class="buttonBox">
+    <view><button class="reject" bindtap="bindButtonTap">拒绝</button></view>
+    <view><button bindtap="agree">接受</button></view>
+  </view>
+  <view class="reasonBox">
+    <form bindsubmit="bindFormSubmit">
+      <textarea placeholder="请填写拒绝原因" name="textarea" focus="{{focus}}"/>
+      <button form-type="submit"> 提交 </button>
+    </form>
+  </view>
+</view>

@@ -1,0 +1,13 @@
+<!--components/myPicker/myPicker.wxml-->
+<view class="row-detail">
+  <view class="info">
+    <view wx:if="{{isMust}}" class="section">*</view>
+    {{nature}}
+  </view>
+  <view class="right">
+    <view class="detail">
+      {{value=='null'?'':value}}
+    </view>
+    <i-icon type="enter" class="more"/>
+  </view>
+</view>

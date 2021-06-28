@@ -1,0 +1,57 @@
+<!--pages/function/repair/repair-record.wxml-->
+<view class="container">
+  <view class="page-content">
+    <view class="tabs">
+      <i-tabs current="{{ current }}" bindchange="handleChange">
+        <i-tab key="tab1" title="未处理"></i-tab>
+        <i-tab key="tab3" title="处理中"></i-tab>
+        <i-tab key="tab2" title="已处理"></i-tab>
+      </i-tabs>
+    </view>
+    <view class="list">
+      <view class="count">
+        <view>共{{total}}条</view>
+        <view class="checkTime">
+          <select id="select" options="{{options}}" bind:change="change"></select>
+        </view>
+      </view>
+      <view wx:if="{{total!=0}}">
+        <block wx:for="{{record}}" wx:key="this">
+          <!-- 维修信息盒子 -->
+          <view class="repairInfoBox" data-id="{{index}}" bindtap="jumptoProcess">
+            <view class="leftAvatar">报修</view>
+            <view class="rightBox">
+              <view class="firstBox">
+                <text class="repairNum">1758611111</text><text style="color:#00bbff">：</text><text class="desc">{{item.faultDescribe}}</text>
+              </view>
+              <view>
+                设备名：{{item.faultEquipment}}
+              </view>
+              <view>
+                巡检人：{{item.inspectionUserName}}
+              </view>
+              <view wx:if="{{current=='tab3' || current == 'tab2'}}">
+                受理人：{{item.controlUserName==null?"暂无":item.controlUserName}}
+              </view>
+              <view wx:if="{{current=='tab2'}}">
+                维修人：{{item.repairUserName==null?"暂无":item.repairUserName}}
+              </view>
+              <view class="lastView">
+                <view class="time">{{item.createTime}}</view>
+                <view class="red" wx:if="{{current=='tab1'}}">待受理</view>
+                <view class="blue" wx:if="{{current=='tab2'}}">已处理</view>
+                <view class="green" wx:if="{{current=='tab3'}}">处理中</view>
+              </view>
+            </view>
+          </view>
+        </block>
+      </view>
+      <!-- <view wx:else class="no">
+        暂无数据
+      </view> -->
+    </view>
+    <view class="loading">
+      <p-load end="{{showLoading}}"></p-load>
+    </view>
+  </view>
+</view>

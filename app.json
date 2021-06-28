@@ -1,0 +1,58 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/index/infomation/infomation",
+    "pages/startup/startup",
+    "pages/mine/mine",
+    "pages/mine/mine-info/mine-info",
+    "pages/function/function",
+    "pages/function/fault/fault",
+    "pages/function/repair/repair-report/repair-report",
+    "pages/function/repair/repair-back/repair-back",
+    "pages/function/repair/repair-record/repair-record",
+    "pages/function/repair/repair-record/record-process/record-process",
+    "pages/function/control/fault-infoList/fault-infoList", 
+    "pages/function/repair/repair-receive/repair-receive",
+    
+    "pages/function/control/fault-detail/fault-detail",
+    "pages/function/leader/check-list/check-list",
+    "pages/function/leader/repair-check/repair-check",
+    "pages/logs/logs",
+    "pages/user/userInfo",
+    "pages/index/index-notice/index-notice"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#CCCCCC",
+    "selectedColor": "#4783B5",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "/images/index_s.png",
+        "iconPath": "./images/index.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "/images/func_s.png",
+        "iconPath": "./images/func.png",
+        "pagePath": "pages/function/function",
+        "text": "功能区"
+      },
+      {
+        "selectedIconPath": "/images/mine_s.png",
+        "iconPath": "/images/mine.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+/* pages/startup/startup.wxss */
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bg {
+  height: 600rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.bg image {
+  height: 600rpx;
+  width: 687rpx;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 30rpx;
+}
+.textone {
+  text-align: center;
+  font-size: 32rpx;
+  color : #030310;
+}
+.texttwo {
+  font-size: 32rpx;
+  color : #989898;
+  text-align: center;
+  margin-top: 30rpx;
+}
+.footer {
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.button {
+  width: 600rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 100rpx;
+}

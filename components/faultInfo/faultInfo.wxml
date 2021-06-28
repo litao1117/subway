@@ -1,0 +1,26 @@
+<!--components/faultInfo/faultInfo.wxml-->
+<view class="info-header">
+      <view class="left">
+        <image src="../../images/repair.png"></image>
+        <text>报修信息</text>
+      </view>
+      <view>{{info.faultId}}</view>
+</view>
+    <view class="info-people">
+      <view class="avatar">
+        <image src="{{info.userAvatar}}"></image>
+      </view>
+      <view class="">
+        <view class="name">报修人：{{info.inspectionUserName}}</view>
+        <view class="time">报修时间：{{info.createTime}}</view>
+      </view>
+    </view>
+    <view class="info-box">
+      <view class="title">维修项目</view><view class="info-content">{{info.faultEquipment}}</view>
+    </view>
+    <view class="info-box">
+      <view class="title">报修地址</view><view class="info-content">{{info.faultPlace}}</view>
+    </view>
+    <view class="info-box">
+      <view class="title">报修内容</view><view class="info-content">{{info.faultDescribe}}</view>
+    </view>

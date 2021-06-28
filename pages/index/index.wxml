@@ -1,0 +1,51 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 页面内容 -->
+  <view class="page-body">
+    <!-- 第一部分 轮播图 -->
+    <view class="swiper">
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"circular="{{circular}}">
+        <block wx:for="{{img}}" wx:key="*this">
+          <swiper-item>
+            <view><image src="{{item}}" class="slide-image" mode="aspectFill" data-index="{{index}}"></image></view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <!-- 第二部分 通告栏 -->
+    <view class="notice-bar">
+      <view class="small">
+        <view class="smallbox">
+          <text>通告栏</text>
+        </view>
+        <navigator hover-class="none" class="jumpto" url="./index-notice/index-notice">
+            <text class="jumpto1">更多</text>
+            <i-icon type="enter" class="jumpto2"/>
+        </navigator>
+      </view>
+      <view>
+        <i-notice-bar icon="systemprompt" loop backgroundcolor="#fff">
+          {{noticeBar1}}
+        </i-notice-bar>
+        <i-notice-bar icon="systemprompt" loop backgroundcolor="#fff">
+          {{noticeBar2}}
+        </i-notice-bar>
+      </view>
+    </view>
+    <!-- 第三部分  一些新闻资讯，以及公司文化等等 -->
+    <view class="news">
+      <view class="small">
+        <view class="smallbox">
+          <text>资讯栏</text>
+        </view>
+        <navigator hover-class="none" class="jumpto" url="./infomation/infomation">
+            <text class="jumpto1">更多</text>
+            <i-icon type="enter" class="jumpto2"/>
+        </navigator>
+      </view>
+      <view class="bigBox" bindtap="goToInfomation">
+        {{infomation}}
+      </view>
+    </view>
+  </view>
+</view>

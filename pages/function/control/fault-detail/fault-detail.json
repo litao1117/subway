@@ -1,0 +1,8 @@
+{ 
+  "navigationBarTitleText": "故障信息",
+  "usingComponents": {
+    "faultInfo": "../../../../components/faultInfo/faultInfo",
+    "i-collapse": "../../../../dist/collapse/index",
+    "i-collapse-item": "../../../../dist/collapse-item/index"
+  }
+}

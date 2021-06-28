@@ -1,0 +1,36 @@
+/* components/myInfo/myInfo.wxss */
+page {
+  font-size: 35rpx;
+}
+.row-detail {
+  height: 90rpx;
+  font-size: 35rpx;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info {
+  color: #353535;
+  margin-left: 30rpx;
+  display: flex;
+}
+.right {
+  display: flex;
+  align-items: center;
+}
+.detail {
+  color: #888;
+  margin-right: 30rpx;
+}
+.hover {
+  background-color: #bfc0c0;
+  opacity: 0.9;
+}
+.section {
+  color: red;
+}
+.more {
+  margin-right: 20rpx;
+}

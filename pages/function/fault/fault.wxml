@@ -1,0 +1,54 @@
+<!--pages/grant/grant.wxml-->
+<view class="container">
+  <view class="page-body">
+    <view class="faultForm">
+      <form catchsubmit="formSubmit" catchreset="formReset">
+      <view class="rowInputBox">
+        <view class="rowInput">
+          <view class="inputTitle">
+            <view class="section">*</view>
+            故障地点
+          </view>
+          <input name="faultPlace" class="input"/>
+        </view>
+        <view class="rowInput">
+          <view class="inputTitle">
+            <view class="section">*</view>
+            故障设备
+          </view>
+          <input name="faultEquipment" class="input"/>
+        </view>
+        <view class="rowInput">
+          <view class="inputTitle">
+            <view class="section">*</view>
+            故障描述
+          </view>
+          <textarea name="faultDescribe" class="textarea" />
+        </view>
+        <view class="rowInput">
+          <view class="inputTitle">
+            <view class="section">*</view>
+            图片(请上传清晰图片)
+          </view>
+          <view class="photo_preview">
+            <!-- 已经选好的图片 -->
+            <block wx:for="{{faultPicture}}" wx:key="key">
+              <view class="upFile" data-id="{{index}}" bindtap="photo_preview" style="border-radius: 5px">
+                <image src="{{item}}" mode="aspectFit"  class="preview_img"></image>
+                <image src="../../../images/delect.png" class="closeImv" mode="scaleToFill" catchtap="deleteImv" data-id="{{index}}"></image>
+              </view>
+            </block>
+            <!-- 选图按钮 -->
+            <view wx:if="{{chooseViewShow}}" class="photo_add" bindtap="chose_photo">
+              <image src="../../../images/add.png" class="add_img" ></image>
+            </view>
+          </view>
+        </view>
+      </view>
+        <view class="submit">
+          <button type="primary" formType="submit">提交</button>
+        </view>
+      </form>
+    </view>
+  </view>
+</view>

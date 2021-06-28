@@ -1,0 +1,31 @@
+<!--components/myInfo/myInfo.wxml-->
+<view wx:if="{{flag}}" class="row-detail">
+  <view class="info">
+    {{nature}}
+  </view>
+  <view class="right">
+    <view class="detail">
+      {{value=='null'?'':value}}
+    </view>
+  </view>
+</view>
+
+<view wx:else bindtap="modalinput" class="row-detail" hover-class='hover' data-nature="{{nature_name}}">
+  <view class="info">
+    <view wx:if="{{isMust}}" class="section">*</view>
+    {{nature}}
+  </view>
+  <view class="right">
+    <view class="detail">
+      {{value=='null'?'':value}}
+    </view>
+    <i-icon type="enter" class="more" />
+  </view>
+</view>
+
+<!-- 弹窗 -->
+<view wx:if="{{!hiddenmodalput}}">
+  <modal id="modal" hidden="{{ hiddenmodalput }}" confirm-text="确认" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
+    <input bindinput='changeValue' value="{{value==='null'?'':value}}" name="{{name}}" focus="{{true}}" placeholder="{{tishi}}"/>
+  </modal>
+</view>

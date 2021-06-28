@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText" : "功能区",
+  "usingComponents": {
+    "funcSmall": "../../components/funcSmall/funcSmall",
+    "i-modal": "../../dist/modal/index"
+  }
+}

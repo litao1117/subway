@@ -1,0 +1,16 @@
+{
+  "name": "subway",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto-js": "^4.0.0",
+    "js-base64": "^3.6.1",
+    "uuid": "^8.3.2"
+  }
+}

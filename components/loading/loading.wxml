@@ -1,0 +1,5 @@
+<!--components/loading/loading.wxml-->
+<view>
+  <i-load-more i-class="load" wx:if="{{!end}}"/>
+  <i-load-more i-class="load-no" wx:if="{{end}}" tip="暂无数据" loading="{{ false }}" />
+</view>

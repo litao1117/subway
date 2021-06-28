@@ -1,0 +1,12 @@
+/* components/loading/loading.wxss */
+.load {
+  margin: 20rpx auto;
+  line-height: 0;
+}
+
+.load-no {
+  font-size: 30rpx;
+  color: #888888;
+  line-height: 50rpx;
+  margin: 0 auto;
+}

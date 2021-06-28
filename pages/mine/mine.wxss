@@ -1,0 +1,153 @@
+/* pages/mine/mine.wxss */
+page {
+  /* background-color: #f6f6f6; */
+}
+.page-body {
+  flex: 1;
+}
+.login {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+  height: 533rpx;
+  z-index: 1;
+}
+.avatar {
+  height: 220rpx;
+  width: 220rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20rpx;
+}
+.avatar image {
+  width: 220rpx;
+  height: 220rpx;
+  border-radius: 50%;
+}
+.loginState {
+  width: 244rpx;
+  text-align: center;
+}
+.loginState .textone {
+  font-size: 40rpx;
+  color: #222222;
+}
+.loginState .texttwo {
+  font-size: 24rpx;
+  color: #888888;
+  margin-top: 26rpx;
+}
+.loginButton {
+  display: flex;
+  flex-direction: column;
+  height: 244rpx;
+  width: 200rpx;
+  justify-content: center;
+  align-items: center;
+}
+.buttonlog {
+  text-align: center;
+  line-height: 75rpx;
+  height: 75rpx;
+  width: 350rpx;
+  font-size: 30rpx;
+  border-radius: 42rpx;
+  border:2rpx solid #fff;
+  background-color: #fff;
+  color :#49ADD6;
+}
+
+/* 头像姓名 */
+.bgBox {
+  width: 100%;
+  height: 533rpx;
+  position: relative;
+}
+.bgImg {
+  position: absolute;
+  width: 100%;
+  height: 533rpx;
+}
+.topBox {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 533rpx;
+  align-items: center;
+  z-index: 1;
+}
+.textInfo {
+  text-align: center;
+  width: 400rpx;
+  height: 120rpx;
+  margin-top: 50rpx;
+}
+.nickname {
+  font-size: 32rpx;
+  color: #222222;
+}
+.sexIcon {
+  width: 30rpx;
+  height: 30rpx;
+}
+.idNum {
+  font-size: 28rpx;
+  margin-top: 10rpx;
+}
+.myButton {
+  background-color: #fff;
+  border-color: #fff;
+}
+/* 功能块 */
+.funcBox {
+  width: 100%;
+  /* height: 812rpx; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.funcSmall {
+  width: 371rpx;
+  height: 264rpx;
+  font-size: 28rpx;
+  border-bottom: 2rpx solid #E7E9F8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rightBorder {
+  border-right: 2rpx solid #E7E9F8;
+}
+.funcIcon {
+  margin-bottom: 28rpx;
+  /* background-size: cover; */
+}
+.icon1 {
+  width: 51rpx;
+  height: 53rpx;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 48.001 50'%3E %3Cdefs%3E %3CclipPath id='clip-path'%3E %3Cpath id='vectorMask' d='M205.673,742a12.443,12.443,0,0,1-7.749-2.709A12.083,12.083,0,0,1,196.4,721.8a1.271,1.271,0,0,0-.122-1.808,1.307,1.307,0,0,0-1.831.119,14.637,14.637,0,0,0-3.209,13.454,8.635,8.635,0,0,1-2.3.32H182.2a9.6,9.6,0,0,1-5.368-1.752,10.277,10.277,0,0,1-3.653-4.453L170.8,722.3a7.673,7.673,0,0,1-.8-3.375,6.532,6.532,0,0,1,.795-3.084c1.4-2.6,4.506-4.4,8.517-4.952l.331-.041a10.142,10.142,0,0,0,12.416.258A12.747,12.747,0,0,1,198,713.947a7.129,7.129,0,0,1,2.483,4.824,12.449,12.449,0,0,1,13.906,2.437,12.078,12.078,0,0,1,0,17.225A12.319,12.319,0,0,1,205.673,742Zm-3.478-9.914h0l-.917,2.719,2.751-.905-1.834-1.814Zm8.256-7.628a1.3,1.3,0,0,0-.917.375l-6.421,6.346,1.833,1.814,6.422-6.346a1.272,1.272,0,0,0,0-1.814A1.3,1.3,0,0,0,210.451,724.458ZM186.01,709.34a8.671,8.671,0,1,1,8.81-8.671A8.751,8.751,0,0,1,186.01,709.34Z' fill='none'/%3E %3C/clipPath%3E %3C/defs%3E %3Cg id='edit_profile' data-name='edit profile' transform='translate(-169.998 -692)'%3E %3Cpath id='Combined_Shape' data-name='Combined Shape' d='M205.673,742a12.443,12.443,0,0,1-7.749-2.709A12.083,12.083,0,0,1,196.4,721.8a1.271,1.271,0,0,0-.122-1.808,1.307,1.307,0,0,0-1.831.119,14.637,14.637,0,0,0-3.209,13.454,8.635,8.635,0,0,1-2.3.32H182.2a9.6,9.6,0,0,1-5.368-1.752,10.277,10.277,0,0,1-3.653-4.453L170.8,722.3a7.673,7.673,0,0,1-.8-3.375,6.532,6.532,0,0,1,.795-3.084c1.4-2.6,4.506-4.4,8.517-4.952l.331-.041a10.142,10.142,0,0,0,12.416.258A12.747,12.747,0,0,1,198,713.947a7.129,7.129,0,0,1,2.483,4.824,12.449,12.449,0,0,1,13.906,2.437,12.078,12.078,0,0,1,0,17.225A12.319,12.319,0,0,1,205.673,742Zm-3.478-9.914h0l-.917,2.719,2.751-.905-1.834-1.814Zm8.256-7.628a1.3,1.3,0,0,0-.917.375l-6.421,6.346,1.833,1.814,6.422-6.346a1.272,1.272,0,0,0,0-1.814A1.3,1.3,0,0,0,210.451,724.458ZM186.01,709.34a8.671,8.671,0,1,1,8.81-8.671A8.751,8.751,0,0,1,186.01,709.34Z' fill='%23212c68' opacity='0.969'/%3E %3Cg id='Mask_by_Combined_Shape' data-name='Mask by Combined Shape' clip-path='url(%23clip-path)'%3E %3Cg id='Mask_by_Combined_Shape-2' data-name='Mask by Combined Shape'%3E %3Cg id='color'%3E %3Crect id='color-2' data-name='color' width='60' height='60' transform='translate(164 688)' fill='%23212c68' opacity='0.969'/%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/svg%3E ");
+}
+.icon2 {
+  width: 42rpx;
+  height: 49rpx;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 42 49.999'%3E %3Cdefs%3E %3CclipPath id='clip-path'%3E %3Cpath id='vectorMask' d='M195,1004h0l-1.67-1.057c-5.17-3.273-10.025-8.726-13.673-15.353S174,973.94,174,967.82v-8.043L195,954l19.5,5.366-21.354,22.729-7.23-7.658a1.459,1.459,0,0,0-2.048-.067,1.429,1.429,0,0,0-.067,2.03l8.288,8.78a1.455,1.455,0,0,0,2.117,0L216,961.984v5.836c0,6.12-2.009,13.14-5.657,19.767s-8.5,12.08-13.674,15.353L195,1004Z' fill='none'/%3E %3C/clipPath%3E %3C/defs%3E %3Cg id='security' transform='translate(-173.998 -953.999)'%3E %3Cpath id='Combined_Shape' data-name='Combined Shape' d='M195,1004h0l-1.67-1.057c-5.17-3.273-10.025-8.726-13.673-15.353S174,973.94,174,967.82v-8.043L195,954l19.5,5.366-21.354,22.729-7.23-7.658a1.459,1.459,0,0,0-2.048-.067,1.429,1.429,0,0,0-.067,2.03l8.288,8.78a1.455,1.455,0,0,0,2.117,0L216,961.984v5.836c0,6.12-2.009,13.14-5.657,19.767s-8.5,12.08-13.674,15.353L195,1004Z' fill='%23212c68' opacity='0.969'/%3E %3Cg id='Mask_by_Combined_Shape' data-name='Mask by Combined Shape' clip-path='url(%23clip-path)'%3E %3Cg id='Mask_by_Combined_Shape-2' data-name='Mask by Combined Shape'%3E %3Cg id='color'%3E %3Crect id='color-2' data-name='color' width='60' height='60' transform='translate(164 950)' fill='%23212c68' opacity='0.969'/%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/svg%3E ");
+}
+.icon3 {
+  width: 52rpx;
+  height: 52rpx;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'  viewBox='0 0 51.999 52'%3E %3Cdefs%3E %3CclipPath id='clip-path'%3E %3Cpath id='vectorMask' d='M536,1006a25.984,25.984,0,0,1-19.753-9.093l9.272-5.353a15.6,15.6,0,0,0,20.961,0l9.272,5.353A25.981,25.981,0,0,1,536,1006Zm21.5-11.382h0l-9.048-5.224a15.518,15.518,0,0,0,2.317-4.367l9.113,5.261a26,26,0,0,1-2.38,4.33Zm-43.01,0h0a26.028,26.028,0,0,1-2.38-4.329l9.113-5.261a15.518,15.518,0,0,0,2.317,4.367l-9.048,5.223Zm46.388-7.055h0l-9.425-5.441A15.742,15.742,0,0,0,551.6,980a15.608,15.608,0,0,0-10.272-14.666V954.547a25.786,25.786,0,0,1,8.209,3.252,26.039,26.039,0,0,1,11.346,29.762Zm-49.766,0h0a26.011,26.011,0,0,1,19.552-33.012v10.788A15.607,15.607,0,0,0,520.4,980a15.735,15.735,0,0,0,.143,2.119l-9.425,5.441ZM533.528,964.6h0V954.116c.82-.077,1.652-.116,2.471-.116s1.653.039,2.468.116v10.478a15.831,15.831,0,0,0-4.939,0Z' fill='none'/%3E %3C/clipPath%3E %3C/defs%3E %3Cg id='help' transform='translate(-510 -954)'%3E %3Cpath id='Combined_Shape' data-name='Combined Shape' d='M536,1006a25.984,25.984,0,0,1-19.753-9.093l9.272-5.353a15.6,15.6,0,0,0,20.961,0l9.272,5.353A25.981,25.981,0,0,1,536,1006Zm21.5-11.382h0l-9.048-5.224a15.518,15.518,0,0,0,2.317-4.367l9.113,5.261a26,26,0,0,1-2.38,4.33Zm-43.01,0h0a26.028,26.028,0,0,1-2.38-4.329l9.113-5.261a15.518,15.518,0,0,0,2.317,4.367l-9.048,5.223Zm46.388-7.055h0l-9.425-5.441A15.742,15.742,0,0,0,551.6,980a15.608,15.608,0,0,0-10.272-14.666V954.547a25.786,25.786,0,0,1,8.209,3.252,26.039,26.039,0,0,1,11.346,29.762Zm-49.766,0h0a26.011,26.011,0,0,1,19.552-33.012v10.788A15.607,15.607,0,0,0,520.4,980a15.735,15.735,0,0,0,.143,2.119l-9.425,5.441ZM533.528,964.6h0V954.116c.82-.077,1.652-.116,2.471-.116s1.653.039,2.468.116v10.478a15.831,15.831,0,0,0-4.939,0Z' fill='%23212c68' opacity='0.969'/%3E %3Cg id='Mask_by_Combined_Shape' data-name='Mask by Combined Shape' clip-path='url(%23clip-path)'%3E %3Cg id='Mask_by_Combined_Shape-2' data-name='Mask by Combined Shape'%3E %3Cg id='color'%3E %3Crect id='color-2' data-name='color' width='60' height='60' transform='translate(506 950)' fill='%23212c68' opacity='0.969'/%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/svg%3E ");
+}
+.icon4 {
+  width: 40rpx;
+  height: 42rpx;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 40.001 42'%3E %3Cdefs%3E %3CclipPath id='clip-path'%3E %3Cpath id='vectorMask' d='M553.331,1260h-36a1.325,1.325,0,0,1-1.334-1.312v-39.375a1.325,1.325,0,0,1,1.334-1.313h36a2.65,2.65,0,0,1,2.668,2.625v7.954a1.334,1.334,0,0,1-2.668,0v-7.954H540v15.83h-4.082a1.313,1.313,0,1,0,0,2.625h5.5a1.343,1.343,0,0,0,.461-.081h9.569l-3.056-3.01a1.3,1.3,0,0,1,0-1.856,1.349,1.349,0,0,1,1.885,0l5.333,5.25a1.3,1.3,0,0,1,0,1.857l-5.333,5.251a1.349,1.349,0,0,1-1.885,0,1.3,1.3,0,0,1,0-1.857l3.056-3.01H540v15.75h13.333v-6.6a1.334,1.334,0,0,1,2.668,0v6.6A2.65,2.65,0,0,1,553.331,1260Zm-30-22.309a1.97,1.97,0,1,0,2,1.97A1.987,1.987,0,0,0,523.33,1237.69Z' fill='none'/%3E %3C/clipPath%3E %3C/defs%3E %3Cg id='log_out' data-name='log out' transform='translate(-515.998 -1217.999)'%3E %3Cpath id='Combined_Shape' data-name='Combined Shape' d='M553.331,1260h-36a1.325,1.325,0,0,1-1.334-1.312v-39.375a1.325,1.325,0,0,1,1.334-1.313h36a2.65,2.65,0,0,1,2.668,2.625v7.954a1.334,1.334,0,0,1-2.668,0v-7.954H540v15.83h-4.082a1.313,1.313,0,1,0,0,2.625h5.5a1.343,1.343,0,0,0,.461-.081h9.569l-3.056-3.01a1.3,1.3,0,0,1,0-1.856,1.349,1.349,0,0,1,1.885,0l5.333,5.25a1.3,1.3,0,0,1,0,1.857l-5.333,5.251a1.349,1.349,0,0,1-1.885,0,1.3,1.3,0,0,1,0-1.857l3.056-3.01H540v15.75h13.333v-6.6a1.334,1.334,0,0,1,2.668,0v6.6A2.65,2.65,0,0,1,553.331,1260Zm-30-22.309a1.97,1.97,0,1,0,2,1.97A1.987,1.987,0,0,0,523.33,1237.69Z' fill='%23212c68' opacity='0.969'/%3E %3Cg id='Mask_by_Combined_Shape' data-name='Mask by Combined Shape' clip-path='url(%23clip-path)'%3E %3Cg id='Mask_by_Combined_Shape-2' data-name='Mask by Combined Shape'%3E %3Cg id='color'%3E %3Crect id='color-2' data-name='color' width='60' height='60' transform='translate(506 1210)' fill='%23212c68' opacity='0.969'/%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/svg%3E ");
+}
+

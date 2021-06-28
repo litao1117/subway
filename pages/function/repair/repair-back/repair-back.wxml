@@ -1,0 +1,41 @@
+<!--pages/function/fault/fault-info/fault-info.wxml-->
+<view class="container">
+  <view class="page-body">
+    <faultInfo info="{{faultInfo.data}}"></faultInfo>
+    <form catchsubmit="formSubmit" catchreset="formReset">
+      <view class="back-box">
+        <view class="back-inBox">
+          <picker bindchange="bindPickerChange" value="{{index}}" range="{{levelArray}}">
+            <c-picker nature="等级评估" nature_name="level" value="{{repairLevel}}"></c-picker>
+          </picker>
+        </view>
+        <view class="back-inBox back-input">
+          <view class="title"><view class="section">*</view>处理结果</view>
+          <view>
+            <input type="text" class="input" name="repairDescribe"/>
+          </view>
+        </view>
+        <view class="back-inBox img-box">
+          <view class="img-title"><view class="section">*</view>图片(请上传清晰图片)</view>
+          <view class="photo_preview">
+              <!-- 已经选好的图片 -->
+              <block wx:for="{{photo_src}}" wx:key="key">
+                <view class="upFile" data-id="{{index}}" bindtap="photo_preview" style="border-radius: 5px">
+                  <image src="{{item}}" mode="aspectFit"  class="preview_img"></image>
+                  <image src="../../../../images/delect.png" class="closeImv" mode="scaleToFill" catchtap="deleteImv" data-id="{{index}}"></image>
+                </view>
+              </block>
+              <!-- 选图按钮 -->
+              <view wx:if="{{chooseViewShow}}" class="photo_add" bindtap="chose_photo">
+                <image src="../../../../images/add.png" class="add_img" ></image>
+              </view>
+          </view>
+        </view>
+        <view class="submit">
+          <view class="tishi">仅能提交一次，请谨慎提交！</view>
+          <button type="primary" form-type="submit">提交</button>
+        </view>
+      </view>
+    </form>
+  </view>
+</view>

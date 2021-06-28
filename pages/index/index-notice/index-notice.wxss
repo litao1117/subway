@@ -1,0 +1,23 @@
+/* pages/index/index-notice/index-notice.wxss */
+page{
+  background-color: #F6F6F6;
+}
+.intro {
+  background-color: #fff;
+  width: 690rpx;
+  min-height: 100vh;
+  border-radius: 10rpx;
+  margin-left:12rpx;
+  margin-top:15rpx;
+  padding-left:20rpx;
+  padding-right:20rpx;
+  padding-bottom:20rpx;
+}
+.content {
+  font-family: PingFang SC;
+  font-size:28rpx;
+  line-height:45rpx;
+  margin-top:15rpx;
+  color:#666666;
+  letter-spacing:3rpx;
+}

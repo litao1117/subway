@@ -1,0 +1,11 @@
+<!--pages/index/infomation/infomation.wxml-->
+<view class="intro">
+  <text class="titleText">
+    {{titleText}}
+  </text>
+  <block wx:for="{{content}}">
+    <view class="content">
+    {{item}}
+  </view>
+  </block>
+</view>

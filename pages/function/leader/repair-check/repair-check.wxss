@@ -1,0 +1,138 @@
+/* pages/function/leader/repair-check/repair-check.wxss */
+.page-body {
+  background-color: #f6f6f6;
+  min-height: 100vh;
+}
+.repairInfoBox {
+  widows: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50rpx;
+  padding: 15rpx 30rpx 15rpx 15rpx;
+}
+
+.title {
+  height: 75rpx;
+  border-bottom: 1rpx solid #f2f2f2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30rpx;
+  padding: 0 15rpx;
+}
+.titleName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titleName image {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+} 
+.more {
+  vertical-align: 10%;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 10rpx;
+  padding-left: 15rpx;
+}
+.info view {
+  font-size: 34rpx;
+  padding: 10rpx 0;
+}
+.info .infoName {
+  color: #979797;
+}
+
+.img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.img image {
+  width: 300rpx;
+  height: 300rpx;
+}
+
+.remark-box {
+  background-color: #fff;
+  margin-top: 20rpx;
+  padding: 20rpx;
+  font-size: 35rpx;
+}
+.remark-text textarea{
+  border: 1rpx solid #dcdcdc;
+  margin-top: 20rpx;
+}
+.remark-box .score {
+  margin: 20rpx 0;
+}
+.score-text {
+  vertical-align: -15%;
+}
+.remark-box .button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100rpx;
+}
+.remark-box .button button {
+  font-size: 35rpx;
+  width: 250rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  color: #fff;
+  border-radius: 50rpx;
+}
+.button .nopass {
+  background-color: #888888;
+}
+.button .pass {
+  background-color: #00bfff;
+}
+.icon {
+  margin-right: 10rpx;
+}
+
+/* 其余人评价表格 */
+.table {
+  border: 0px solid darkgray;
+}
+.bg-w{
+  background: snow;
+}
+.bg-g{
+  background: #E6F3F9;
+}
+.tr {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  min-height: 40rpx;
+}
+.th {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem; 
+  color: #888888;
+}
+
+.td {
+  width:60%;
+  justify-content: center;
+  text-align: center;
+  word-wrap: break-word;
+  padding: 15rpx;
+}
+.th1,.td1 {
+  width: 35%;
+}

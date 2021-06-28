@@ -1,0 +1,43 @@
+<!--pages/function/control/fault-detail/fault-detail.wxml-->
+<view class="container">
+  <view class="page-body">
+    <faultInfo info="{{faultInfo.data}}"></faultInfo>
+    <view class="peopleList">
+      <i-collapse name="{{name}}">
+        <i-collapse-item title="维修人员列表" name="name1" i-class="collapse-item" i-class-title="collapse-item-title">
+            <view slot="content">
+              <checkbox-group bindchange="checkboxChange">
+                <label class="check-label" wx:for="{{repair}}" wx:key="{{item.userOpenid}}">
+                  <view class="check-img">
+                    <image src="{{item.userAvatar}}"></image>
+                    <view class="check-bd">{{item.userName}}</view>
+                  </view>
+                  <view class="check-hd">
+                    <checkbox value="{{item.userOpenid}}" checked="{{item.checked}}"/>
+                  </view>
+                </label>
+              </checkbox-group>
+            </view>
+        </i-collapse-item>
+        <i-collapse-item title="领导人员列表" name="name2" i-class="collapse-item" i-class-title="collapse-item-title">
+            <view slot="content" i-class-content="green-text">
+              <checkbox-group bindchange="checkboxChange">
+                <label class="check-label" wx:for="{{header}}" wx:key="{{item.userOpenid}}">
+                  <view class="check-img">
+                    <image src="{{item.userAvatar}}"></image>
+                    <view class="check-bd">{{item.userName}}</view>
+                  </view>
+                  <view class="check-hd">
+                    <checkbox value="{{item.userOpenid}}" checked="{{item.checked}}"/>
+                  </view>
+                </label>
+              </checkbox-group>
+            </view>
+        </i-collapse-item>
+      </i-collapse>
+    </view>
+    <view class="button">
+      <button bindtap="dispatch">点击推送</button>
+    </view>
+  </view>
+</view>

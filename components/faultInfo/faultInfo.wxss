@@ -1,0 +1,59 @@
+/* components/faultInfo/faultInfo.wxss */
+/* 信息头 */
+.info-header {
+  background-color: #1296db;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100rpx;
+  color: #fff;
+  padding: 0 20rpx;
+  font-size: 35rpx;
+}
+.info-header .left {
+  display: flex;
+  align-items: center;
+}
+.info-header .left image {
+  width: 60rpx;
+  height: 60rpx;
+}
+/* 报修人 */
+.info-people {
+  display: flex;
+  align-items: center;
+  height: 150rpx;
+  border-bottom: 1rpx solid #DCDCDC;
+  background-color: #fff;
+}
+.info-people .avatar {
+  width: 150rpx;
+}
+.info-people .avatar image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+}
+.info-people .time {
+  font-size: 32rpx;
+  color: #888888;
+}
+
+/* 报修信息盒子 */
+.info-box {
+  border-bottom: 1rpx solid #DCDCDC;
+  font-size: 35rpx;
+  display: flex;
+  padding: 30rpx 0;
+  background-color: #fff;
+}
+.info-box .title {
+  width: 250rpx;
+  margin: 0 25rpx 0 30rpx;
+}
+.info-box .info-content {
+  width: 800rpx;
+  padding-right: 25rpx;
+}

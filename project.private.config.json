@@ -1,0 +1,24 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "订阅消息",
+          "pathName": "pages/function/repair/repair-receive/repair-receive",
+          "query": "faultId=1399326374058102785&dispatchId=1399280789583654913",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

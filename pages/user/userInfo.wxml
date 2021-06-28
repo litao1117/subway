@@ -1,0 +1,15 @@
+<!--pages/user/userInfo.wxml-->
+<view class="box">
+  <view class="avaterBox">
+    <view class='userNature'>头像</view>
+    <view class='wxName'><image src="{{userInfo.userAvatar}}"></image></view>
+  </view>
+  <info key="微信昵称" value="{{wxInfo.userNickname}}"></info>
+</view>
+
+<view class="box">
+  <info key="姓名" value="{{userInfo.userName}}"></info>
+  <info key="性别" value="{{userInfo.userSex}}"></info>
+  <info key="生日" value="{{userInfo.userBirthday}}"></info>
+  <info key="电话" value="{{userInfo.userTel}}"></info>
+</view>

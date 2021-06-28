@@ -1,0 +1,5 @@
+<!--components/userInfo/userInfo.wxml-->
+<view class='box'>
+  <view class='userNature'>{{key}}</view>
+  <view class='wxName'>{{value=='undefined'||value=='null'||value==null?'':value}}</view>
+</view>

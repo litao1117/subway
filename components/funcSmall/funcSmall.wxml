@@ -1,0 +1,7 @@
+<!--components/funcSmall/funcSmall.wxml-->
+<view class="funcSmall" bindtap="jumpTo">
+  <view class="funcIcon">
+    <image src="{{icon}}"></image>
+  </view>
+  <view class="name">{{funcName}}</view>
+</view>

@@ -1,0 +1,68 @@
+<!--pages/mine/mine.wxml-->
+<view class="container">
+  <!-- 页面内容 -->
+  <view class="page-body">
+    <!-- 第一部分 头像以及登录 -->
+    <view class="bgBox" wx:if="{{!isHide}}">
+      <image class="bgImg" src="../../images/bg.png"></image>
+      <view class="login">
+        <view class="avatar">
+          <image src="../../images/avatar.jpg"></image>
+        </view>
+        <view class="loginState">
+          <view class="textone">未登录</view>
+          <view class="texttwo">登录后查看信息</view>
+        </view>
+        <view class="loginButton">
+          <view class="buttonlog" bind:tap="doitcode">登录</view>
+        </view>
+      </view>
+    </view>
+    <!-- 头像姓名 -->
+    <view class="bgBox" wx:if="{{isHide}}">
+      <image class="bgImg" src="../../images/bg.png"></image>
+      <view class="topBox">
+        <view class="avatar">
+          <image src="{{wxInfo.userAvatar}}"></image>
+        </view>
+        <!-- <view class="textInfo">
+          <view class="nickname">{{userInfo.user_name}}
+          </view>
+          <view class="idNum">id:123456</view>
+        </view> -->
+        <view class="textInfo">
+          <view class="nickname">{{userInfo.userName}}
+          </view>
+          <view class="idNum">id:123456</view>
+        </view>
+        <view class="loginButton">
+          <view class="buttonlog myButton">{{position}}</view>
+        </view>
+      </view>
+    </view>
+    <!-- 功能块 -->
+    <view class="funcBox">
+      <view class="funcSmall rightBorder"  bindtap="jumpToInfo">
+        <view class="funcIcon icon1"></view>
+        <view>编辑资料</view>
+      </view>
+      <view class="funcSmall">
+        <view class="funcIcon icon2"></view>
+        <view>安全设置</view>
+      </view>
+      <view class="funcSmall rightBorder">
+        <view class="funcIcon icon3"></view>
+        <view>帮助中心</view>
+      </view>
+      <view class="funcSmall" bindtap="loginOut">
+        <view class="funcIcon icon4"></view>
+        <view>退出登录</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 请先登录 -->
+  <i-modal visible="{{ visible2 }}" bind:ok="handleOk" bind:cancel="handleClose">
+    <view>请先登录</view>
+  </i-modal>
+</view>

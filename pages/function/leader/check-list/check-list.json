@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText" : "维修列表",
+  "usingComponents": {
+    "i-icon": "../../../../dist/icon/index",
+    "repairBox": "../../../../components/repairBox/repairBox"
+  }
+}

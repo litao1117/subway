@@ -1,0 +1,33 @@
+<!--components/steps/steps.wxml-->
+<view class="steps">
+  <!-- <view class="left">
+    <view class="icon">
+      <image src="../../images/point.png"></image>
+    </view>
+    <view class="border"></view>
+  </view>
+  <view class="right">
+    <view class="time">2020-02-03 12:12</view>
+    <view class="title">
+      这里是标题
+    </view>
+    <view class="des">
+        描述
+    </view>
+    <view class="name-time">
+      姓名<text>提交于：2020-02-03 12:12</text>
+    </view>
+  </view> -->
+  <i-steps current="{{verticalCurrent}}" direction="vertical">
+    <i-step>
+        <view slot="title" class="title">
+              {{title}}
+        </view>
+        <view slot="content">
+            这里是该步骤的描述信息
+        </view>
+    </i-step>
+  </i-steps>
+</view>
+
+

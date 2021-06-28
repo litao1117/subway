@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "故障信息",
+  "usingComponents": {
+    "i-icon": "../../../../dist/icon/index"
+  }
+}

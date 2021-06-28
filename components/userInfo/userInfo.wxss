@@ -1,0 +1,25 @@
+/* components/userInfo/userInfo.wxss */
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 93rpx;
+  width: 100%;
+  background-color: white;
+}
+
+.userNature {
+  font-size: 30rpx;
+  margin-left: 30rpx;
+}
+
+.wxName {
+  max-width: 450rpx;
+  word-break: keep-all;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 30rpx;
+  margin-right: 30rpx;
+  color: #888;
+}

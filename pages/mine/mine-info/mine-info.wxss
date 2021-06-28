@@ -1,0 +1,67 @@
+/* pages/mine-info/mine-info.wxss */
+page {
+  font-size: 30rpx;
+  background-color:#F6F6F6;
+}
+.page-body {
+  margin-top: 20rpx;
+}
+
+.mediuBox,
+.bottomBox {
+  margin-top: 20rpx;
+}
+.row-detail {
+  height: 90rpx;
+  font-size: 35rpx;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  color: #353535;
+  margin-left: 30rpx;
+  width: 250rpx;
+}
+.detail {
+  color: #888;
+  margin-right: 30rpx;
+}
+.right {
+  display: flex;
+  align-items: center;
+}
+.avatar {
+  margin: 0 auto;
+  margin-right: 30rpx;
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 10rpx;
+}
+.grant {
+  height: 90rpx;
+  font-size: 35rpx;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+.submit::after{
+  border:none;
+}
+.submit {
+  margin-top: 25rpx;
+  background-color:white;
+  border-radius: 42rpx;
+  color:#4783B5;
+  font-family:PingFang SC;
+  font-size:30rpx;
+  width:690rpx;
+  height:84rpx;
+}
+.hover {
+  background-color: #bfc0c0;
+  opacity: 0.9;
+}

@@ -1,0 +1,86 @@
+/* pages/grant/grant.wxss */
+page {
+  background-color: #f6f6f6;
+}
+
+.title {
+  margin-top: 15rpx;
+  text-align: center;
+}
+.faultForm {
+  margin-top: 20rpx;
+}
+.rowInputBox {
+  background-color: #fff;
+  padding: 20rpx;
+}
+.inputTitle {
+  font-size: 35rpx;
+  color: #888888;
+  display: flex;
+  align-items: center;
+}
+.section {
+  color: red;
+}
+.input {
+  border-top: 1rpx solid #f6f6f6;
+  border-bottom: 1rpx solid #f6f6f6;
+  height: 90rpx;
+  margin-top: 15rpx;
+}
+.textarea {
+  width: 100%;
+  border-top: 1rpx solid #f6f6f6;
+  border-bottom: 1rpx solid #f6f6f6;
+}
+.rowInput {
+  margin-top: 15rpx;
+}
+
+/* 图片 */
+.photo_preview {
+  margin: 20rpx 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.photo_preview .upFile{
+  width: 220rpx;
+  height: 220rpx;
+  position: relative;
+}
+.photo_preview .upFile .preview_img {
+  width: 220rpx;
+  height: 220rpx;
+  padding: 0rpx 7rpx;
+}
+.photo_preview .upFile .closeImv {
+  position: absolute;
+  right: 0rpx;
+  top: 0rpx;
+  width: 50rpx;
+  height:50rpx;
+}
+
+.photo_add {
+  width: 220rpx;
+  height: 220rpx;
+  background-color:#e5e5e5;
+  display: flex;
+  flex-direction: column;
+  justify-content:  center;
+  align-items:  center;
+  padding: 0rpx 7rpx;
+}
+.add_img {
+  width: 50rpx;
+  height: 50rpx;
+}
+.submit button{
+  width: 600rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 100rpx;
+  margin: 30rpx auto;
+}

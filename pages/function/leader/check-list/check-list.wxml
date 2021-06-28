@@ -1,0 +1,21 @@
+<!--pages/function/leader/check-list/check-list.wxml-->
+<view class="container"> 
+  <view class="page-body">
+    <block wx:for="{{record}}">
+      <!-- <view class="repairInfoBox">
+        <view class="title">
+          <view class="titleName"><image src="../../../../images/func.png"></image>维修信息</view>
+          <view class="repairNum">报修单号：{{item.oddNumber}}
+            <i-icon type="enter" class="more"/>
+          </view>
+        </view>
+        <view class="info">
+          <view><text class="infoName">设备：{{item.deviceName}}</text></view>
+          <view><text class="infoName">描述：{{item.des}}</text></view>
+          <view><text class="infoName">等级：{{item.level}}</text></view>
+        </view>
+      </view> -->
+      <repairBox info="{{item}}" data-id="{{item.id}}" bindtap="jumptoCheck"></repairBox>
+    </block>
+  </view>
+</view>

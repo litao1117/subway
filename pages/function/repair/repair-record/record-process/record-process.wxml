@@ -1,0 +1,25 @@
+<!--pages/function/repair/repair-record/record-process/record-process.wxml-->
+<view class="container">
+  <view class="page-body">
+    <i-steps current="{{verticalCurrent}}" direction="vertical">
+      <block wx:for="{{process}}">
+        <i-step>
+          <view slot="title" class="title">
+                {{title}}
+          </view>
+          <view slot="content">
+              这里是该步骤的描述信息
+          </view>
+        </i-step>
+        <i-step>
+          <view slot="title" class="title">
+                {{title}}
+          </view>
+          <view slot="content">
+              这里是该步骤的描述信息
+          </view>
+        </i-step>
+      </block>
+    </i-steps>
+  </view>
+</view>

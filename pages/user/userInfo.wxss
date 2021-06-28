@@ -1,0 +1,27 @@
+/* pages/user/userInfo.wxss */
+page {
+  background-color: #f6f6f6;
+}
+.avaterBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 93rpx;
+  width: 100%;
+  background-color: white;
+}
+.userNature {
+  font-size: 30rpx;
+  margin-left: 30rpx;
+}
+.wxName {
+  width: 100rpx;
+}
+.wxName image{
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.box {
+  margin-bottom: 30rpx;
+}

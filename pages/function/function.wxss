@@ -1,0 +1,53 @@
+/* pages/function/function.wxss */
+page {
+  /* background-color: #f6f6f6; */
+}
+.page-body {
+  flex: 1;
+}
+/* 顶部头像及姓名 */
+.bgBox {
+  width: 100%;
+  height: 465rpx;
+  position: relative;
+}
+.bgImg {
+  position: absolute;
+  width: 100%;
+  height: 465rpx;
+}
+.topBox {
+  position: absolute;
+  width: 100%;
+  height: 465rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.avatar {
+  width: 193rpx;
+  height: 186rpx;
+  margin-bottom: 30rpx;
+}
+.avatar image {
+  width: 193rpx;
+  height: 186rpx;
+  border-radius: 50%;
+}
+.name {
+  font-size: 35rpx;
+}
+/* 功能块 */
+.funcBox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 80rpx;
+}
+.funcBox funcSmall:nth-child(odd) {
+  border-right: 1rpx solid #E0E0E0;
+}

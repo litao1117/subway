@@ -1,0 +1,34 @@
+<!--pages/function/function.wxml-->
+<view class="container">
+  <view class="page-body">
+    <!-- 顶部头像及姓名 -->
+    <view class="bgBox">
+      <image class="bgImg" src="../../images/bg.png"></image>
+      <view class="topBox">
+        <view class="avatar">
+          <image src="{{wxInfo.userAvatar}}"></image>
+        </view>
+        <view class="name">{{wxInfo.userNickname}}</view>
+      </view>
+    </view>
+    <!-- 维修人员功能块 -->
+    <view>
+      <!-- 功能块 -->
+      <view class="funcBox">
+        <block class="childFunc" wx:for="{{currentArr}}" wx:key="index">
+          <funcSmall funcName="{{item.name}}" icon="{{item.icon}}" url="{{item.url}}"></funcSmall>
+        </block>
+      </view>
+    </view>
+    
+  </view>
+
+  <!-- 请先登录 -->
+  <i-modal visible="{{ visible2 }}" bind:ok="handleOk" bind:cancel="handleClose">
+    <view>请先登录</view>
+  </i-modal>
+  <!-- 请先填写授权码 -->
+  <i-modal visible="{{ visible1 }}" bind:ok="handleOk1" bind:cancel="handleClose2">
+    <view>请先填写授权码</view>
+  </i-modal>
+</view>
